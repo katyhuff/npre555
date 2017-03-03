@@ -1,0 +1,237 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage[inner=1in,outer=1in,top=1in,bottom=1in]{geometry}
+\pagestyle{empty}
+\usepackage{placeins}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+%\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{\CourseTitle} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{\CourseSemester \CourseYear} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+\usepackage{tabularx}
+\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{xspace}
+\newcommand{\CourseNumber}{NPRE555}
+\newcommand{\CourseTitle}{Reactor Theory I\xspace}%
+\newcommand{\CourseSemester}{Fall\xspace}%
+\newcommand{\CourseYear}{2017\xspace}%
+\newcommand{\CourseDays}{TR\xspace}%
+\newcommand{\CourseStart}{12:00pm\xspace}%
+\newcommand{\CourseEnd}{1:20pm\xspace}%
+\newcommand{\CourseInstructor}{Prof. Kathryn Huff}
+\newcommand{\CourseInstructorEmail}{kdhuff@illinois.edu}
+\newcommand{\CourseRoom}{100H\xspace}%
+\newcommand{\CourseBuilding}{Talbot Laboratory\xspace}%
+\newcommand{\CourseUniversity}{University of Illinois, Urbana-Champaign\xspace}%
+\newcommand{\TeachingAssistant}{TA Name\xspace}%
+\newcommand{\TAOfficeHourDays}{Wednesdays\xspace}%
+\newcommand{\TAOfficeHourStart}{1:00pm\xspace}%
+\newcommand{\TAOfficeHourEnd}{3:00pm\xspace}%
+\newcommand{\TAOfficeHourPlace}{123 Talbot Laboratory\xspace}
+%\newcommand{\Course<++>}{<++>}
+%\newcommand{\Course<++>}{<++>}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{\CourseNumber: \CourseTitle\\}
+\author{\CourseUniversity}
+\date{\CourseSemester \CourseYear}
+\begin{document}
+\maketitle
+%\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+\begin{center}
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{rXrX}
+\hline
+\textbf{Instructor:} & \CourseInstructor & \textbf{Time:} & \CourseDays \CourseStart -- \CourseEnd \\
+\textbf{Email:} &  \href{mailto:\CourseInstructorEmail}{\CourseInstructorEmail} & \textbf{Place:} & \CourseRoom \CourseBuilding\\
+\hline
+\end{tabularx}
+
+\end{table}
+\end{center}
+
+\paragraph{Course Pages:}
+\begin{enumerate}
+        \item \url{https://compass2g.illinois.edu}
+        \item \url{https://github.com/katyhuff/\CourseNumber}
+        \item \url{https://piazza.com/illinois/fall2017/\CourseNumber/home}
+\end{enumerate}
+
+\paragraph{TA Office Hours:} The teaching assistant for the course,
+\TeachingAssistant, will hold office hours \TAOfficeHourDays from
+\TAOfficeHourStart to \TAOfficeHourEnd in \TAOfficeHourPlace.
+
+\paragraph{Office Hours:} Prof. Huff will hold office hours on Thursdays and
+Fridays from 3pm-COB in her office, 118 Talbot Laboratory at 104 S. Wright St.
+If you have an individual issue, please make an appointment. If your colleagues
+might be helpful, please post your questions in the forum provided for this
+purpose online rather than attending office hours.
+
+\paragraph{Main References:}
+A few essential references for this course will be assigned as readings. The
+recommended text for this course is \cite{bellandglassstone,stacey}.
+\bibliographystyle{unsrt}
+\renewcommand{\refname}{\normalfont\selectfont\normalsize}\vspace{-1cm}
+\bibliography{bibliography}
+
+\paragraph{Objectives:}
+\begin{itemize}
+\item Advanced development of neutron transport theory
+\item  neutron slowing-down and resonance absorption
+\item  approximations to the transport equation
+\item  direct numerical methods and other techniques of approximation theory applied to the neutron transport equation
+\item  advanced topics. 
+\end{itemize}
+
+\paragraph{Prerequisites:}
+\begin{itemize}
+\item NPRE455 (waived for Physics Majors) 
+\end{itemize}
+
+\paragraph{Grading Policy:} Grades will be assigned as a weighted sum of the
+following work.
+
+\begin{table}[h]
+\begin{tabularx}{\textwidth}{Xrr}
+        \textbf{Work} & \textbf{Weight (Undergraduate)} & \textbf{Weight (Graduate)} \\
+\hline
+\textbf{Quizzes}     & (20\%)  & (0\%)\\
+\textbf{Homework}    & (40\%)  & (40\%)\\
+\textbf{Midterm 1}   & (10\%)  & (10\%)\\
+\textbf{Midterm 2}   & (10\%)  & (10\%)\\
+\textbf{Final Exam}  & (20\%)  & (20\%)\\
+\textbf{Final Proj.} & (0\%)   & (20\%)\\
+\hline
+\textbf{Total}       & (100\%) & (100\%)\\
+\end{tabularx}
+\end{table}
+
+\paragraph{Important Dates:}
+\begin{center} \begin{minipage}{3.8in}
+\begin{flushleft}
+Midterm \#1      \dotfill 10:00-10:50am, October 3, 2017 \\
+Midterm \#2      \dotfill 10:00-10:50am, November 7, 2017\\
+%Project Deadline \dotfill ~Month Day \\
+Final Exam       \dotfill 1:30-4:30pm, December 14, 2017\\
+\end{flushleft}
+\end{minipage}
+\end{center}
+
+\paragraph{Class Policies:}
+
+\begin{itemize}
+\item[] \textbf{Integrity:} This is an institution of higher
+learning. You will be swiftly ejected from the course if you are caught
+undermining its integrity. Note the
+\href{http://www.provost.illinois.edu/academicintegrity/students.html}{Student's
+Quick Reference Guide to Academic Integrity} and the
+\href{http://studentcode.illinois.edu/article1_part4_1-401.html}{Academic
+Integrity Policy and Procedure}.
+\item[] \textbf{Attendance:} Regular attendance is mandatory. Request approval for absence for extenuating circumstances prior to absence.
+\item[] \textbf{Electronics:} Active participation is essential and expected.
+        Accordingly, students must turn off all electronic devices (laptop,
+        tablets, cellphones, etc.) during class. Exceptions may be granted for
+        laptops if engaging in computational exercises or taking notes.
+\item[] \textbf{Collaboration:} Collaboratively reviewing course materials and studying for exams with fellow students can be enriching.  This is recommended.  However, unless otherwise instructed, homework assignments are to be completed independently and materials submitted as homework should be the result of one's own independent work.
+\item[] \textbf{Late Work:} Late work has a halflife of 1 hour. That is, adjusted for lateness, your grade $G(t)$ is a decaying percentage of the raw grade $G_0$. An assignment turned in $t$ hours late will receive a grade according to the following relation:
+\begin{align*}
+        G(t) &= G_0e^{-\lambda t}
+        \intertext{where}
+        G(t) &= \mbox{grade adjusted for lateness}\\
+        G_0 &= \mbox{raw grade}\\
+        \lambda &= \frac{ln(2)}{t_{\frac{1}{2}}} = \mbox{decay constant} \\
+        t &= \mbox{time elapsed since due [hours]}\\
+        t_{1/2} &= 1 = \mbox{half-life [hours]} \\
+\end{align*}
+\item[] \textbf{Make-up Work:} There will be no negotiation about late work except in the case of absence documented by an absence letter from the Dean of Students.  The university policy for requesting such a letter is in \href{http://studentcode.illinois.edu/article1_part5_1-501.html}{the Student Code}. Please note that such a letter is appropriate for many types of conflicts, but that religious conflicts require special early handling. In accordance with university policy, students seeking an excused absence for religious reasons should complete the Request for Accommodation for Religious Observances Form, which can be found on the Office of the Dean of Students website. The student should submit this form to the instructor and the Office of the Dean of Students by the end of the second week of the course to which it applies.
+
+\end{itemize}
+
+\paragraph{Accessibility:} I hope that this course will be inclusive and
+accommodating for all learners. As such, I am committed upholding the vision
+and values of \href{http://www.inclusiveillinois.illinois.edu/index.html}{Inclusive Illinois}
+in my
+classroom.  With regard to accommodating all learners, please note that many
+resources are provided through
+\href{http://disability.illinois.edu/academic-support/accommodations}{the
+Division of Disability Resources and Educational Services}.  To request
+particular accommodations, please contact me as soon as possible so that we can
+work out any necessary arrangements.
+
+\paragraph{Other Resources:}
+University students typically experience a wide range of stressors during their
+time on campus. Accordingly, campus resources exist to help students manage
+stress levels, mental health, physical health, and emergencies while navigating
+this environment. I hope you will take advantage of these campus resources as
+soon as they can be of help.
+
+\begin{itemize}
+\item \href{https://campusrec.illinois.edu/}{The Campus Recreational Centers}
+\item \href{http://counselingcenter.illinois.edu/}{The Counselling Center}
+\item \href{http://www.mckinley.illinois.edu/clinics/mental\_health.htm}{The McKinley Mental Health Clinic}
+\item \href{http://odos.illinois.edu/emergency/}{The Emergency Dean}
+\end{itemize}
+
+\pagebreak
+\FloatBarrier
+\renewcommand{\arraystretch}{1}
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{lllcllll}
+\multicolumn{8}{c}{\textbf{Course Schedule:}\textit{ Note that this schedule is subject to change}}\\
+&&&&&&&\\
+\textbf{Date} & \textbf{Week} & \textbf{Day} & \textbf{Unit} & \textbf{Chap.} & \textbf{Quiz} & \textbf{HW} & \textbf{HW}\\
+ &  &  &  &  &                                                                                          & \textbf{Given} & \textbf{Due}\\
+\hline
+\hline
+08-29 & 1 & T & Intro & 1 & <++> & <++> & <++> \\
+08-31 & 1 & R & <++> & <++> & <++> & <++> & <++>\\
+09-05 & 2 & T & <++> & <++> & <++> & <++> & <++>\\
+09-07 & 2 & R & <++> & <++> & <++> & <++> & <++>\\
+09-12 & 3 & T & <++> & <++> & <++> & <++> & <++>\\
+09-14 & 3 & R & <++> & <++> & <++> & <++> & <++>\\
+09-19 & 4 & T & <++> & <++> & <++> & <++> & <++>\\
+09-21 & 4 & R & <++> & <++> & <++> & <++> & <++>\\
+09-26 & 5 & T & <++> & <++> & <++> & <++> & <++>\\
+09-28 & 5 & R & <++> & <++> & <++> & <++> & <++>\\
+10-03 & 6 & T & <++> & <++> & <++> & <++> & <++>\\
+10-05 & 6 & R & <++> & <++> & <++> & <++> & <++>\\
+10-10 & 7 & T & <++> & <++> & <++> & <++> & <++>\\
+10-12 & 7 & R & <++> & <++> & <++> & <++> & <++>\\
+10-17 & 8 & T & <++> & <++> & <++> & <++> & <++>\\
+10-19 & 8 & R & <++> & <++> & <++> & <++> & <++>\\
+10-24 & 9 & T & <++> & <++> & <++> & <++> & <++>\\
+10-26 & 9 & R & <++> & <++> & <++> & <++> & <++>\\
+10-31 & 10 & T & <++> & <++> & <++> & <++> & <++>\\
+11-02 & 10 & R & <++> & <++> & <++> & <++> & <++>\\
+11-07 & 11 & T & <++> & <++> & <++> & <++> & <++>\\
+11-09 & 11 & R & <++> & <++> & <++> & <++> & <++>\\
+11-14 & 12 & T & <++> & <++> & <++> & <++> & <++>\\
+11-16 & 12 & R & <++> & <++> & <++> & <++> & <++>\\
+11-21 & 13 & T & <++> & <++> & <++> & <++> & <++>\\
+11-23 & 13 & R & <++> & <++> & <++> & <++> & <++>\\
+11-28 & 14 & T & <++> & <++> & <++> & <++> & <++>\\
+11-30 & 14 & R & <++> & <++> & <++> & <++> & <++>\\
+12-05 & 15 & T & <++> & <++> & <++> & <++> & <++>\\
+12-07 & 15 & R & <++> & <++> & <++> & <++> & <++>\\
+12-12 & 16 & T & Review &  &  &  & <++>\\
+12-14 & 16 & R & \textbf{No Class} &  &  &  & \\
+\end{tabular}
+\end{center}
+\end{table}
+%%%%%% THE END 
+\end{document} 
