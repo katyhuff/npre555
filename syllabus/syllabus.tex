@@ -27,14 +27,14 @@
 \usepackage{xspace}
 \newcommand{\CourseNumber}{NPRE555}
 \newcommand{\CourseTitle}{Reactor Theory I\xspace}%
-\newcommand{\CourseSemester}{Fall\xspace}%
-\newcommand{\CourseYear}{2017\xspace}%
-\newcommand{\CourseDays}{TR\xspace}%
-\newcommand{\CourseStart}{12:00pm\xspace}%
-\newcommand{\CourseEnd}{1:20pm\xspace}%
+\newcommand{\CourseSemester}{Spring\xspace}%
+\newcommand{\CourseYear}{2018\xspace}%
+\newcommand{\CourseDays}{MW\xspace}%
+\newcommand{\CourseStart}{1:00pm\xspace}%
+\newcommand{\CourseEnd}{2:50pm\xspace}%
 \newcommand{\CourseInstructor}{Prof. Kathryn Huff}
 \newcommand{\CourseInstructorEmail}{kdhuff@illinois.edu}
-\newcommand{\CourseRoom}{100H\xspace}%
+\newcommand{\CourseRoom}{104\xspace}%
 \newcommand{\CourseBuilding}{Talbot Laboratory\xspace}%
 \newcommand{\CourseUniversity}{University of Illinois, Urbana-Champaign\xspace}%
 \newcommand{\TeachingAssistant}{TA Name\xspace}%
@@ -68,22 +68,22 @@
 \begin{enumerate}
         \item \url{https://compass2g.illinois.edu}
         \item \url{https://github.com/katyhuff/\CourseNumber}
-        \item \url{https://piazza.com/illinois/fall2017/\CourseNumber/home}
 \end{enumerate}
 
-\paragraph{TA Office Hours:} The teaching assistant for the course,
-\TeachingAssistant, will hold office hours \TAOfficeHourDays from
-\TAOfficeHourStart to \TAOfficeHourEnd in \TAOfficeHourPlace.
+%\paragraph{TA Office Hours:} The teaching assistant for the course,
+%\TeachingAssistant, will hold office hours \TAOfficeHourDays from
+%\TAOfficeHourStart to \TAOfficeHourEnd in \TAOfficeHourPlace.
 
-\paragraph{Office Hours:} Prof. Huff will hold office hours on Thursdays and
-Fridays from 3pm-COB in her office, 118 Talbot Laboratory at 104 S. Wright St.
-If you have an individual issue, please make an appointment. If your colleagues
-might be helpful, please post your questions in the forum provided for this
-purpose online rather than attending office hours.
+\paragraph{Office Hours:} Prof. Huff will hold office hours by appointment only
+in her office, 118 Talbot Laboratory at 104 S. Wright St.  Please make an appointment at 
+\url{katyhuff.youcanbook.me}. If your colleagues might be helpful, please 
+discuss your questions with them directly before scheduling office hours.
 
 \paragraph{Main References:}
-A few essential references for this course will be assigned as readings. The
-recommended text for this course is \cite{bellandglassstone,stacey}.
+A few essential references for this course will be assigned as readings and 
+will be the source of homework problems. The required texts for this course are 
+\cite{stacey_nuclear_2007} and \cite{bell_nuclear_1970}. I also recommend 
+\cite{duderstadt_transport_1979} for conceptual review.
 \bibliographystyle{unsrt}
 \renewcommand{\refname}{\normalfont\selectfont\normalsize}\vspace{-1cm}
 \bibliography{bibliography}
@@ -91,10 +91,14 @@ recommended text for this course is \cite{bellandglassstone,stacey}.
 \paragraph{Objectives:}
 \begin{itemize}
 \item Advanced development of neutron transport theory
-\item  neutron slowing-down and resonance absorption
-\item  approximations to the transport equation
-\item  direct numerical methods and other techniques of approximation theory applied to the neutron transport equation
-\item  advanced topics. 
+\item  neutron slowing-down,
+\item resonance absorption,
+\item Doppler broadening,
+\item neutron mitigation operators,
+\item  approximations to the transport equation,
+\item  direct numerical methods and other techniques of approximation theory 
+        applied to the neutron transport equation,
+\item  and advanced topics. 
 \end{itemize}
 
 \paragraph{Prerequisites:}
@@ -106,25 +110,26 @@ recommended text for this course is \cite{bellandglassstone,stacey}.
 following work.
 
 \begin{table}[h]
-\begin{tabularx}{\textwidth}{Xrr}
-        \textbf{Work} & \textbf{Weight (Undergraduate)} & \textbf{Weight (Graduate)} \\
+\begin{tabularx}{\textwidth}{Xr}
+        \textbf{Work} & \textbf{Weight} \\
 \hline
-\textbf{Quizzes}     & (20\%)  & (0\%)\\
-\textbf{Homework}    & (40\%)  & (40\%)\\
-\textbf{Midterm 1}   & (10\%)  & (10\%)\\
-\textbf{Midterm 2}   & (10\%)  & (10\%)\\
-\textbf{Final Exam}  & (20\%)  & (20\%)\\
-\textbf{Final Proj.} & (0\%)   & (20\%)\\
+\textbf{Quizzes}     & (10\%)  \\
+\textbf{Homework}    & (30\%)  \\
+\textbf{Midterm 1}   & (10\%)  \\
+\textbf{Project 1}    & (10\%)  \\
+\textbf{Midterm 2}   & (10\%)  \\
+\textbf{Project 2}    & (10\%)  \\
+\textbf{Final Project}  & (20\%)  \\
 \hline
-\textbf{Total}       & (100\%) & (100\%)\\
+\textbf{Total}       & (100\%)\\
 \end{tabularx}
 \end{table}
 
 \paragraph{Important Dates:}
 \begin{center} \begin{minipage}{3.8in}
 \begin{flushleft}
-Midterm \#1      \dotfill 10:00-10:50am, October 3, 2017 \\
-Midterm \#2      \dotfill 10:00-10:50am, November 7, 2017\\
+Midterm \#1      \dotfill 10:00-10:50pm, 3, 2017 \\
+Midterm \#2      \dotfill 10:00-10:50pm, 7, 2017\\
 %Project Deadline \dotfill ~Month Day \\
 Final Exam       \dotfill 1:30-4:30pm, December 14, 2017\\
 \end{flushleft}
@@ -198,38 +203,38 @@ soon as they can be of help.
  &  &  &  &  &                                                                                          & \textbf{Given} & \textbf{Due}\\
 \hline
 \hline
-08-29 & 1 & T & Intro & 1 & <++> & <++> & <++> \\
-08-31 & 1 & R & <++> & <++> & <++> & <++> & <++>\\
-09-05 & 2 & T & <++> & <++> & <++> & <++> & <++>\\
-09-07 & 2 & R & <++> & <++> & <++> & <++> & <++>\\
-09-12 & 3 & T & <++> & <++> & <++> & <++> & <++>\\
-09-14 & 3 & R & <++> & <++> & <++> & <++> & <++>\\
-09-19 & 4 & T & <++> & <++> & <++> & <++> & <++>\\
-09-21 & 4 & R & <++> & <++> & <++> & <++> & <++>\\
-09-26 & 5 & T & <++> & <++> & <++> & <++> & <++>\\
-09-28 & 5 & R & <++> & <++> & <++> & <++> & <++>\\
-10-03 & 6 & T & <++> & <++> & <++> & <++> & <++>\\
-10-05 & 6 & R & <++> & <++> & <++> & <++> & <++>\\
-10-10 & 7 & T & <++> & <++> & <++> & <++> & <++>\\
-10-12 & 7 & R & <++> & <++> & <++> & <++> & <++>\\
-10-17 & 8 & T & <++> & <++> & <++> & <++> & <++>\\
-10-19 & 8 & R & <++> & <++> & <++> & <++> & <++>\\
-10-24 & 9 & T & <++> & <++> & <++> & <++> & <++>\\
-10-26 & 9 & R & <++> & <++> & <++> & <++> & <++>\\
-10-31 & 10 & T & <++> & <++> & <++> & <++> & <++>\\
-11-02 & 10 & R & <++> & <++> & <++> & <++> & <++>\\
-11-07 & 11 & T & <++> & <++> & <++> & <++> & <++>\\
-11-09 & 11 & R & <++> & <++> & <++> & <++> & <++>\\
-11-14 & 12 & T & <++> & <++> & <++> & <++> & <++>\\
-11-16 & 12 & R & <++> & <++> & <++> & <++> & <++>\\
-11-21 & 13 & T & <++> & <++> & <++> & <++> & <++>\\
-11-23 & 13 & R & <++> & <++> & <++> & <++> & <++>\\
-11-28 & 14 & T & <++> & <++> & <++> & <++> & <++>\\
-11-30 & 14 & R & <++> & <++> & <++> & <++> & <++>\\
-12-05 & 15 & T & <++> & <++> & <++> & <++> & <++>\\
-12-07 & 15 & R & <++> & <++> & <++> & <++> & <++>\\
-12-12 & 16 & T & Review &  &  &  & <++>\\
-12-14 & 16 & R & \textbf{No Class} &  &  &  & \\
+01-17 & 1 & W & Intro & 1 & <++> & <++> & <++> \\
+01-22 & 1 & M & <++> & <++> & <++> & <++> & <++>\\
+01-24 & 2 & W & <++> & <++> & <++> & <++> & <++>\\
+01-29 & 2 & M & <++> & <++> & <++> & <++> & <++>\\
+01-31 & 3 & W & <++> & <++> & <++> & <++> & <++>\\
+02-05 & 3 & M & <++> & <++> & <++> & <++> & <++>\\
+02-07 & 4 & W & <++> & <++> & <++> & <++> & <++>\\
+02-12 & 4 & M & <++> & <++> & <++> & <++> & <++>\\
+02-14 & 5 & W & <++> & <++> & <++> & <++> & <++>\\
+02-19 & 5 & M & <++> & <++> & <++> & <++> & <++>\\
+02-21 & 6 & W & <++> & <++> & <++> & <++> & <++>\\
+02-28 & 6 & M & <++> & <++> & <++> & <++> & <++>\\
+02-30 & 7 & W & <++> & <++> & <++> & <++> & <++>\\
+03-05 & 7 & M & <++> & <++> & <++> & <++> & <++>\\
+03-07 & 8 & W & <++> & <++> & <++> & <++> & <++>\\
+03-12 & 8 & M & <++> & <++> & <++> & <++> & <++>\\
+03-14 & 9 & W & <++> & <++> & <++> & <++> & <++>\\
+03-19 & 9 & M & \textbf{No Class} & <++> & <++> & <++> & <++>\\
+03-21 & 10 & W & \textbf{No Class} & <++> & <++> & <++> & <++>\\
+03-26 & 10 & M & <++> & <++> & <++> & <++> & <++>\\
+03-28 & 11 & W & <++> & <++> & <++> & <++> & <++>\\
+04-02 & 11 & M & <++> & <++> & <++> & <++> & <++>\\
+04-04 & 12 & W & <++> & <++> & <++> & <++> & <++>\\
+04-09 & 12 & M & <++> & <++> & <++> & <++> & <++>\\
+04-11 & 13 & W & <++> & <++> & <++> & <++> & <++>\\
+04-16 & 13 & M & <++> & <++> & <++> & <++> & <++>\\
+04-18 & 14 & W & <++> & <++> & <++> & <++> & <++>\\
+11- & 14 & M & <++> & <++> & <++> & <++> & <++>\\
+12-05 & 15 & W & <++> & <++> & <++> & <++> & <++>\\
+12-07 & 15 & M & <++> & <++> & <++> & <++> & <++>\\
+12-12 & 16 & W & Review &  &  &  & <++>\\
+12-14 & 16 & M & \textbf{No Class} &  &  &  & \\
 \end{tabular}
 \end{center}
 \end{table}
