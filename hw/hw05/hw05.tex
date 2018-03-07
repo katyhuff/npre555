@@ -14,8 +14,8 @@
 % Here's where you edit the Class, Exam, Date, etc.
 \newcommand{\class}{NPRE 555}
 \newcommand{\term}{Spring 2018}
-\newcommand{\assignment}{HW 3}
-\newcommand{\duedate}{2018.02.14}
+\newcommand{\assignment}{HW 5}
+\newcommand{\duedate}{2018.02.28}
 %\newcommand{\timelimit}{50 Minutes}
 
 \newcommand{\nth}{n\ensuremath{^{\text{th}}} }
@@ -63,51 +63,66 @@
 
 % ---------------------------------------------
 \begin{questions}
-        \question[30] Derive the energy loss relationship for elastic scattering 
-        between a neutron and a target atom of atom number A in the 
-        \emph{laboratory} reference frame. Assume the neutron scatters through 
-        an angle $\theta$.
-                \begin{solution}
-                        solution here
-                \end{solution}
 
-        % ---------------------------------------------
-        \question At higher energies, E, the elastic angular differential 
-        cross section in the center of mass system ($cm$) exhibits anisotropy 
-        (so called p-wave) scattering of the form:
-        
-        \begin{align*}
-                \frac{d\sigma(\theta_{cm})}{d\Omega} = 
-                \frac{\sigma_s}{4\pi}(1+a\cos(\theta_{cm})) \text{ where } -1 \le a \le 1
-        \end{align*}
-
+        \question In class we examined the general case of neutrons streaming 
+        into a vacuum region being emitted from a spherical surface. Here we 
+        examine a specific case of streaming outward from a spherical surface 
+        into a vacuum region.
         \begin{parts}
-                \part[10] Find the elastic cross section at this energy. 
+        \part[20] Find the angular flux at a position $r$ in the vacuum region 
+        if the angular flux on the surface is $\psi(r_s, \mu_s) = 
+        \frac{1}{\mu_s}$ for $0 \le \mu_s \le 1$.
         \begin{solution}
                 solution here
         \end{solution}
 
-                
-                \part[20] What fraction of the elastically scattered
-                neutrons appear at angles greater that 90$^\circ$ 
-                in the center-of-mass system?
+        \part[20] What is the value of the total scalar flux, $\phi(r)$, at the 
+        position $r$?
         \begin{solution}
                 solution here
         \end{solution}
 
-                
-                \part[30] Plot the differential cross section in the center-of-mass and laboratory 
-                systems for the three cases $a = 0.8$, $a = 0$, and $a = -0.8$. 
-                Note that one must transform the center-of-mass cross section to 
-                the laboratory reference frame 
-                \begin{align*}
-                \sigma(\theta_{cm})d\hat{\Omega_{cm}} = \sigma_L(\theta_L)d\hat{\Omega_L}
-                \end{align*}
+        \part[10] What angular distribution must a boundary source have to 
+        give you the same angular flux distribution in the  vacuum?
         \begin{solution}
                 solution here
         \end{solution}
 \end{parts}
 
+        % ---------------------------------------------
+        \question Consider a purely absorbing slab ($\Sigma_a$).
+        \begin{parts}
+                \part[10] Using the method of characteristics to derive the 
+                streaming term, write the 1-D transport equation in terms of $\mu$, $\Sigma_a$, and source 
+                $S(x,\mu)$.
+
+        \begin{solution}
+                solution here
+        \end{solution}
+
+        \part[10] The slab has length L, vacuum boundaries, and a uniform, 
+        isotropic source of volumetric strength $S_0 
+        \left[\frac{n}{cm^3}\right]$. What is $S(x, \mu)$ in terms of $S_0$? 
+
+        \begin{solution}
+                solution here
+        \end{solution}
+
+        \part[10] Find the rightward angular flux $\psi_+$, leftward angular 
+        flux $\psi_-$, the scalar flux $\phi(x)$
+
+        \part[20] Plot the angular flux from $0\le x \le L$ for values of $\mu$ corresponding to 
+        $\theta = \frac{\pi}{4}$, 
+        $\theta = \frac{3\pi}{8}$, 
+        $\theta = \frac{3\pi}{4}$, 
+        $\theta = \frac{5\pi}{8}$. The plot should contain 4 lines on a single 
+        graph. If it is helpful, feel free to choose an explicit length for L.
+
+
+        \begin{solution}
+                solution here
+        \end{solution} 
+        \end{parts}
 \end{questions}
 
 
