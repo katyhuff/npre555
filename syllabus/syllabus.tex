@@ -9,7 +9,7 @@
 \definecolor{darkred}{rgb}{.7,0,0}
 \definecolor{darkgreen}{rgb}{0,.6,0}
 \definecolor{red}{rgb}{.98,0,0}
-\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\usepackage[colorlinks,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
 %\renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
 \pagestyle{fancyplain}
@@ -34,7 +34,7 @@
 \newcommand{\CourseEnd}{10:50am\xspace}%
 \newcommand{\CourseInstructor}{Prof. Kathryn Huff}
 \newcommand{\CourseInstructorEmail}{kdhuff@illinois.edu}
-\newcommand{\CourseRoom}{on Zoom\xspace}%
+\newcommand{\CourseRoom}{\href{https://illinois.zoom.us/j/96634585623?pwd=U1FTL0VJaHh1UjVpRWlGQk1VT3d5dz09}{Zoom: 966 3458 5623}\xspace}%
 \newcommand{\CourseBuilding}{\xspace}%
 \newcommand{\CourseUniversity}{University of Illinois, Urbana-Champaign\xspace}%
 \newcommand{\TeachingAssistant}{TA Name\xspace}%
@@ -68,6 +68,7 @@
 \begin{enumerate}
         \item \url{https://compass2g.illinois.edu}
         \item \url{https://github.com/katyhuff/\CourseNumber}
+        \item \url{https://mediaspace.illinois.edu/channel//177052391}
 \end{enumerate}
 
 %\paragraph{TA Office Hours:} The teaching assistant for the course,
@@ -130,7 +131,7 @@ following work.
 %Midterm \#1      \dotfill 10:00-10:50pm, 3, 2017 \\
 %Midterm \#2      \dotfill 10:00-10:50pm, 7, 2017\\
 %Project Deadline \dotfill ~Month Day \\
-Final Project    \dotfill ??? 2020\\
+Final Project    \dotfill 8:00am-11:00am., Monday Dec. 14, 2020\\
 \end{flushleft}
 \end{minipage}
 \end{center}
@@ -145,13 +146,18 @@ undermining its integrity. Note the
 Quick Reference Guide to Academic Integrity} and the
 \href{http://studentcode.illinois.edu/article1_part4_1-401.html}{Academic
 Integrity Policy and Procedure}.
-\item[] \textbf{Attendance:} Regular attendance is mandatory. Request approval for absence for extenuating circumstances prior to absence.
+\item[] \textbf{Attendance:} Attendence is strongly encouraged. While it is 
+        typically mandatory, the COVID-19 pandemic requires flexibility. 
+                Students unable to attend synchronous class sessions must 
+                request recordings of those sessions from Prof. Huff and are 
+                expected to watch them. If you are or become ill, please 
+                communicate with me and the Dean of Students regarding your 
+                expected need for accommodation in this class. I am willing, 
+                able, and ready to make neccessary accommodations.
 \item[] \textbf{Electronics:} Active participation is essential and expected.
-        Accordingly, students must turn off all electronic devices (laptop,
-        tablets, cellphones, etc.) during class. Exceptions may be granted for
-        laptops if engaging in computational exercises or taking notes.
 \item[] \textbf{Collaboration:} Collaboratively reviewing course materials and studying for exams with fellow students can be enriching.  This is recommended.  However, unless otherwise instructed, homework assignments are to be completed independently and materials submitted as homework should be the result of one's own independent work.
-\item[] \textbf{Late Work:} Late work has a halflife of 1 hour. That is, adjusted for lateness, your grade $G(t)$ is a decaying percentage of the raw grade $G_0$. An assignment turned in $t$ hours late will receive a grade according to the following relation:
+\item[] \textbf{Late Work:} Extensions due to the pandemic will be considered. 
+        However, in general, late work has a halflife of 1 hour. That is, adjusted for lateness, your grade $G(t)$ is a decaying percentage of the raw grade $G_0$. An assignment turned in $t$ hours late will receive a grade according to the following relation:
 \begin{align*}
         G(t) &= G_0e^{-\lambda t}
         \intertext{where}
@@ -161,7 +167,21 @@ Integrity Policy and Procedure}.
         t &= \mbox{time elapsed since due [hours]}\\
         t_{1/2} &= 1 = \mbox{half-life [hours]} \\
 \end{align*}
-\item[] \textbf{Make-up Work:} There will be no negotiation about late work except in the case of absence documented by an absence letter from the Dean of Students.  The university policy for requesting such a letter is in \href{http://studentcode.illinois.edu/article1_part5_1-501.html}{the Student Code}. Please note that such a letter is appropriate for many types of conflicts, but that religious conflicts require special early handling. In accordance with university policy, students seeking an excused absence for religious reasons should complete the Request for Accommodation for Religious Observances Form, which can be found on the Office of the Dean of Students website. The student should submit this form to the instructor and the Office of the Dean of Students by the end of the second week of the course to which it applies.
+\item[] \textbf{Make-up Work:} There will be no negotiation about late work 
+        except in the case of absence documented by an absence letter from the 
+                Dean of Students.  The university policy for requesting such a 
+                letter is in 
+                \href{http://studentcode.illinois.edu/article1_part5_1-501.html}{the 
+                Student Code}. Please note that such a letter is appropriate 
+                for many types of conflicts, but that religious conflicts 
+                require special early handling. In accordance with university 
+                policy, students seeking an excused absence for religious 
+                reasons should complete the Request for Accommodation for 
+                Religious Observances Form, which can be found on the Office of 
+                the Dean of Students website. The student should submit this 
+                form to the instructor and the Office of the Dean of Students 
+                by the end of the second week of the course to which it 
+                applies.
 
 \end{itemize}
 
@@ -202,39 +222,41 @@ soon as they can be of help.
               &  &  & & \textbf{Stacey}& \textbf{B\&G} & \textbf{Given} & \textbf{Due}\\
 \hline
 \hline
-01-17 & 1 & W & Transport Eqn. & 9 & 1 & HW1 & \\
-01-22 & 2 & M & Transport Eqn. & 9 & 1 &  & \\
-01-24 & 2 & W & Boundary Conds. & 9 & 1 & HW2 & HW1\\
-01-29 & 3 & M & git &  &  &  & \\
-01-31 & 3 & W & no class &  &  &  & HW2\\
-02-05 & 4 & M & angle \& energy & 9 & 1 &  & \\
-02-07 & 4 & W & MC    & 9.12 & 1\& 2 & HW3 \& CP1 & \\
-02-12 & 5 & M & MC & 9.12 & 1 \& 2 &  & \\
-02-14 & 5 & W & $P_N$ & 9 & 3 & HW4 & HW3\\
-02-19 & 6 & M & $P_N$ & 9 & 3 &  & \\
-02-21 & 6 & W & $P_N$ & 9 & 3 & HW5 & HW4\\
-02-28 & 7 & M & $P_N$ & 9 & 3 &  & \\
-02-30 & 7 & W & Multi-group $P_N$ & 9 & 4 &     & HW5\\
-03-05 & 8 & M & Multi-group $P_N$ & 9 & 4 &  & \\
-03-07 & 8 & W & Multi-group $P_N$ & 9 & 4 & HW6 \& CP2 & CP1\\
-03-12 & 9 & M & $P_N$ Eigenvalue Calcs.& 9 & 4 &  &   \\
-03-14 & 9 & W & $P_N$ Eigenvalue Calcs. & 9 & 4 &      & HW6\\
-03-19 & 10 & M & \textbf{No Class} &  &  &  & \\
-03-21 & 10 & W & \textbf{No Class} &  &  &  & \\
-03-26 & 11 & M & $S_N$ & 9 & 5 &     &    \\
-03-28 & 11 & W & $S_N$ & 9 & 5 & HW7 & HW6 \\
-04-02 & 12 & M & Adjoint Eqn. & 13 & 6 &  & \\
-04-04 & 12 & W & Perturbation Theory & 13 & 6 &  & HW7\\
-04-09 & 13 & M & Variational Methods & 13 & 6 & & \\
-04-11 & 13 & W & \textbf{Guest Lecture} &  &  & CP3 & CP2\\
-04-16 & 14 & M & Neutron Slowing Down & 10 &7 &  & \\
-04-18 & 14 & W & Neutron Slowing Down & 10 & 7 & HW8 & HW7\\
-04-23 & 15 & M & Neutron Thermalization & 11 & 7 &  & \\
-04-25 & 15 & W & Resonance Absorption & 12 & 11 & HW9 & HW8 \\
-04-30 & 16 & M & Resonance Absorption &  12 & 11 &  & \\
-05-02 & 16 & W & Review and Discussion & &  &  & HW9\\
-05-03 & 17 & Th & \textbf{Reading Day} &  &  &  & \\
-05-07 & 17 & M & \textbf{Final Exam} &  &  &  & \\
+08-24 & 1 & M & Transport Eqn. & 9 & 1 & HW1 & \\
+08-26 & 1 & W & Transport Eqn. & 9 & 1 &  & \\
+08-31 & 2 & M & Boundary Conds. & 9 & 1 & HW2 & HW1\\
+09-02 & 2 & W & Boundary Conds. & 9 & 1 &  & \\
+09-07 & 3 & M & no class &  &  &  & \\
+09-09 & 3 & W & Angle \& Energy & 9 & 1 &  & \\
+09-14 & 4 & M & Angle \& Energy & 9 & 1 & CP1 & \\
+09-16 & 4 & W & MC    & 9.12 & 1\&2 &  HW3 & HW2\\
+09-21 & 5 & M & MC & 9.12 & 1\&2 &  & \\
+09-23 & 5 & W & $P_N$ & 9 & 3 & HW4 & HW3\\
+09-28 & 6 & M & $P_N$ & 9 & 3 &  & \\
+09-30 & 6 & W & $P_N$ & 9 & 3 &  & \\
+10-05 & 7 & M & $P_N$ & 9 & 3 &  & \\
+10-07 & 7 & W & Multi-group $P_N$ & 9 & 4 & HW5  & HW4\\
+10-05 & 8 & M & Multi-group $P_N$ & 9 & 4 &  & \\
+10-07 & 8 & W & Multi-group $P_N$ & 9 & 4 & CP2 & CP1\\
+10-12 & 9 & M & $P_N$ Eigenvalue Calcs.& 9 & 4 &  &   \\
+10-14 & 9 & W & $P_N$ Eigenvalue Calcs. & 9 & 4 & HW6 & HW5\\
+10-19 & 10 & M & $S_N$ & 9 & 5 &  & \\
+10-21 & 10 & W & $S_N$ & 9 & 5 &  & \\
+10-26 & 11 & M & $S_N$ & 9 & 5 &     &    \\
+10-28 & 11 & W & $S_N$ & 9 & 5 & HW7 & HW6 \\
+11-02 & 12 & M & Adjoint Eqn. & 13 & 6 &  & \\
+11-04 & 12 & W & Adjoint Eqn. & 13 & 6 & HW8 & HW7\\
+11-09 & 13 & M & Perturbation Theory & 13 & 6 & & \\
+11-11 & 13 & W & Variational Methods &  &  & CP3 & CP2\\
+11-16 & 14 & M & Neutron Slowing Down & 10 &7 &  & \\
+11-18 & 14 & W & Neutron Slowing Down & 10 & 7 & HW9 & HW8\\
+11-23 & 15 & M & \textbf{Fall Break} &  &  &  & \\
+11-25 & 15 & W & \textbf{Fall Break} &  &  &  &  \\
+11-30 & 16 & M & Neutron Thermalization &  11 & 7 &  & \\
+12-02 & 16 & W & Neutron Thermalization & 11 & 7 &  & HW9\\
+12-07 & 17 & M & Resonance Absorption & 12 & 11 &  & \\
+12-09 & 17 & W &  & 12 & 11 &  & \\
+12-14 & 17 & M & \textbf{Final Exam} &  &  & CP3 & \\
 \end{tabular}
 \end{center}
 \end{table}
